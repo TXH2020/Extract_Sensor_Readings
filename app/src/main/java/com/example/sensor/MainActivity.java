@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity
             try {
                 // the IP and port should be correct to have a connection established
                 // Creates a stream socket and connects it to the specified port number on the named host.
-                client = new Socket("192.168.0.202", 4444); // connect to server
+                client = new Socket("put your ip address", 4444); // connect to server
                 printwriter = new PrintWriter(client.getOutputStream(),true);
                 printwriter.write(message); // write the message to output stream
                 printwriter.flush();
