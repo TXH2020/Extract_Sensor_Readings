@@ -25,7 +25,7 @@ def get_sensor_value(s):
 
 def animate(i, xs, ys):
 
-    # Read temperature (Celsius) from TMP102
+    # Read temperature from TCP connection
     temp_c = get_sensor_value(s)
 
     # Add x and y to lists
